@@ -5,5 +5,8 @@ module.exports = {
     output: {
         path: join(__dirname, './dist'),
         filename: 'main.js',
-    }
+    },
+    //TODO
+    plugins:[],
+    loaders:[]
 }
