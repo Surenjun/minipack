@@ -5,11 +5,9 @@
 ### use yarn
 ```yarn init```
 
-### build
+### Configure your srjpackConfig.json
 
 ```
-Configure your srjpackConfig
-
 yarn build  
 ```
 
