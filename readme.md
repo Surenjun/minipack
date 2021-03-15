@@ -7,9 +7,7 @@
 
 ### configure your srjpackConfig.json
 
-```
-yarn build  
-```
+```yarn build  ```
 ### webpack工作流程
 
 > Compiler模块是webpack的核心
