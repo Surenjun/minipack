@@ -1,4 +1,5 @@
 const {join} = require('path')
+const ConsolePlugin = require('./plugins/ConsolePlugin')
 
 module.exports = {
     entry: './src/index.js',
@@ -6,7 +7,8 @@ module.exports = {
         path: join(__dirname, './dist'),
         filename: 'main.js',
     },
-    //TODO
-    plugins:[],
+    plugins:[new ConsolePlugin({
+        title:'这是 console plugin'
+    })],
     loaders:[]
 }

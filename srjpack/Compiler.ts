@@ -12,7 +12,8 @@ class Compiler {
     constructor(options) {
         this.options = options;
         this.modules = [];
-        //注册plugins的钩子
+
+        //配置plugins的钩子
         this.hooks = {
             run: new SyncHook(['compilation']),
         }
@@ -22,7 +23,7 @@ class Compiler {
         const {options} = this;
         const compilation = this.newCompilation();
 
-        //TODO 合适的时机 调度初始化的plugins钩子执行 待完善
+        //注册调度 初始化的plugins钩子
         this.hooks.run.call(compilation);
         //找到entry 按照入口文件执行
         const entryModule = compilation.buildModule(options.entry, true);
